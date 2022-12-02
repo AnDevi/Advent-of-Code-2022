@@ -11,26 +11,24 @@ points = 0
 
 def fight(p1, p2):
 	p2 = p2 - 23
-	if p1 > p2:
+	if p1 == p2:
+		return 3
+	elif p1 > p2:
 		if abs(p1 - p2) == 1:
-			return False
+			return 0
 		else:
-			return True
+			return 6
 	else:
 		if abs(p1 - p2) == 1:
-			return True
+			return 6
 		else:
-			 return False
+			 return 0
 
 for p1, p2 in games:
 	p1 = ord(p1)
 	p2 = ord(p2)
 	points += p2 - 87
-	if p1 == (p2 - 23):
-		points += 3
-	else:
-		if fight(p1, p2):
-			points += 6
+	points += fight(p1, p2)
 
 print(f'Part 1: {points}')
 
