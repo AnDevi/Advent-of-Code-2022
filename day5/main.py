@@ -34,14 +34,15 @@ def move(cargo, moves, is_CrateMover_9001 = False):
 	
 	for move in moves:
 		cnt, start, end = move[0], move[1], move[2]
-		for i in range(cnt):
-			if is_CrateMover_9001: 
+		if is_CrateMover_9001:
+			for i in range(cnt):
 				cargo[end].append(cargo[start][-(cnt - i)])
-			else:
+			cargo[start] = cargo[start][:len(cargo[start]) - cnt]
+		else:
+			for i in range(cnt):
 				cargo[end].append(cargo[start][-1])
 				cargo[start].pop()
-		if is_CrateMover_9001:
-			cargo[start] = cargo[start][:len(cargo[start]) - cnt]
+			
 		print_dict(cargo)	
 
 	result = str()
