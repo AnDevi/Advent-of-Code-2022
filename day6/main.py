@@ -6,7 +6,6 @@ content = list(Path(Path(__file__).parent.resolve() / 'day6.txt').read_text())
 
 def find_packet_start(packet, packet_len):
 	sub_packet = packet[:packet_len]
-	start = 0
 	for i in range(packet_len, len(content) -1 , 1):
 		sub_packet = sub_packet[1:]
 		sub_packet.append(content[i])
