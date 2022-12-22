@@ -3,7 +3,7 @@
 from pathlib import Path
 from enum import Enum
 
-content = Path(Path(__file__).parent.resolve() / 'day10.txt').read_text().splitlines()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text().splitlines()
 
 class Action(Enum):
     IDLE = 1

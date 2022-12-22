@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-content = list(Path(Path(__file__).parent.resolve() / 'day6.txt').read_text())
+content = list(Path(Path(__file__).parent.resolve() / 'input.txt').read_text())
 
 def find_packet_start(packet, packet_len):
 	sub_packet = packet[:packet_len]

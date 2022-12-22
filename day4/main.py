@@ -3,7 +3,7 @@
 from pathlib import Path
 import re
 
-content = Path(Path(__file__).parent.resolve() / 'day4.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 LOG_RE = re.compile(r"(\d+)-(\d+),(\d+)-(\d+)")
 

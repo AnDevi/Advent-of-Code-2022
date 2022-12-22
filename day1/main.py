@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-content = Path(Path(__file__).parent.resolve() / 'day1.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 elfs_str = content.split("\n\n")
 elfs = []

@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-content = Path(Path(__file__).parent.resolve() / 'day3.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 def priority(c):
 	return ord(c) - ord('A') + 27 if c.isupper() else ord(c) - ord('a') + 1

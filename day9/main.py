@@ -64,7 +64,7 @@ def move_knots(moves, knots_cnt):
 
     return len(last_knot_positions)
 
-content = Path(Path(__file__).parent.resolve() / 'day9.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 moves = []
 for line in content.splitlines():
     dir, cnt = line.split()

@@ -51,7 +51,7 @@ def move(cargo, moves, is_CrateMover_9001 = False):
 
 	return result
 
-content = Path(Path(__file__).parent.resolve() / 'day5.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 LOG_RE = re.compile(r"move (\d+) from (\d+) to (\d+)")
 

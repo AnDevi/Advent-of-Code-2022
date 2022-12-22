@@ -12,7 +12,7 @@ def grid_print(grid):
 		print(''.join([str(grid[y][x]) for x in range(w)]))
 	print()
 
-content = Path(Path(__file__).parent.resolve() / 'day8.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 grid = [[int(num) for num in line.strip()] for line in content.splitlines()]
 # grid_print(grid)

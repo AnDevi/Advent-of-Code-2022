@@ -73,7 +73,7 @@ class Dir:
 		return size
 
 
-content = Path(Path(__file__).parent.resolve() / 'day7.txt').read_text()
+content = Path(Path(__file__).parent.resolve() / 'input.txt').read_text()
 
 device = Device()
 MAX_SIZE = 100000
